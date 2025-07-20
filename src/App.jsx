@@ -39,7 +39,7 @@ const deleteTask = (indexDelete) => {
 
   return (
     <>
-    <main className="bg-[url(src/assets/background.png)] bg-bottom bg-cover h-screen w-full flex justify-center items-center flex-col gap-5">
+    <main className="bg-[url(public/assets/background.png)] bg-bottom bg-cover h-screen w-full flex justify-center items-center flex-col gap-5">
       <AddBar task={task} setTask={setTask} addTask={addTask}/>
       <Taskchart task={task} tasks={tasks} toggleCheck={toggleCheck} deleteTask={deleteTask}/>
     </main>
