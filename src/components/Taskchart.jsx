@@ -15,7 +15,7 @@ export default function Taskchart({ tasks, toggleCheck, deleteTask }) {
                                 <button onClick={() => toggleCheck(index)}>
                                     
                                     <img
-                                        src={item.checked ? "/public/assets/check.webp" : "/public/assets/circle.png"}
+                                        src={item.checked ? "/assets/check.webp" : "/public/assets/circle.png"}
                                         height={18}
                                         width={18}
                                         alt="Status"
@@ -32,7 +32,7 @@ export default function Taskchart({ tasks, toggleCheck, deleteTask }) {
                                 <button
                                     onClick={() => deleteTask(index)}>
                                     <img
-                                        src={"/public/assets/trash.png"}
+                                        src={"/assets/trash.png"}
                                         height={23}
                                         width={23}
                                         alt="trash"
