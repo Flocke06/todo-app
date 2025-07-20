@@ -5,17 +5,17 @@ export default function Taskchart({ tasks, toggleCheck, deleteTask }) {
 
     return (
 
-        <div className="flex justify-start items-start w-[65%] min-h-[40%] max-h-[40%] overflow-y-auto scrollbar-hide bg-neutral-200 bg-rounded rounded-4xl text-xl box-border">
+        <div className="shadow-lg shadow-neutral-500/50 flex justify-start items-start w-[55%] min-h-[40%] max-h-[40%] overflow-y-auto scrollbar-hide bg-neutral-100 bg-rounded rounded-4xl text-xl box-border">
             <div className="w-full flex justify-center">
                 <ul className="w-[98%]">
                     {tasks.map((item, index) => (
-                        <li key={item.id} testID={item.id} className="flex items-center justify-between w-full px-4 py-1 border my-2 rounded-4xl">
+                        <li key={item.id} testID={item.id} className="shadow-lg shadow-neutral-600/40 flex items-center justify-between w-full px-4 py-1 border my-2 rounded-4xl">
                             <div className="flex gap-2 w-full select-none bg-fixed">
                                 
                                 <button onClick={() => toggleCheck(index)}>
                                     
                                     <img
-                                        src={item.checked ? "/src/assets/check.webp" : "/public/assets/circle.png"}
+                                        src={item.checked ? "/public/assets/check.webp" : "/public/assets/circle.png"}
                                         height={18}
                                         width={18}
                                         alt="Status"

@@ -10,10 +10,10 @@ export default function AddBar({task, setTask, addTask}) {
     }
 
     return (
-        <div className="flex justify-center sticky items-center w-[65%] h-12 bg-neutral-200 bg-rounded rounded-4xl">
+        <div className="shadow-lg shadow-neutral-500/50 flex justify-center sticky items-center w-[55%] h-12 bg-neutral-100 bg-rounded rounded-4xl">
                
             <input 
-                className="w-full text-center focus:outline-none focus:ring-0 focus:border-none border-none"
+                className=" todo-item w-full text-center focus:outline-none focus:ring-0 focus:border-none border-none"
 
                 type="text"
                 value={task}
