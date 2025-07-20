@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import AddBar from './components/AddBar';
+import AddBar from './components/Addbar';
 import Taskchart from './components/Taskchart';
 import './App.css'
 
