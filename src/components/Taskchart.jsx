@@ -15,7 +15,7 @@ export default function Taskchart({ tasks, toggleCheck, deleteTask }) {
                                 <button onClick={() => toggleCheck(index)}>
                                     
                                     <img
-                                        src={item.checked ? "/assets/check.webp" : "/public/assets/circle.png"}
+                                        src={item.checked ? "/assets/check.webp" : "/assets/circle.png"}
                                         height={18}
                                         width={18}
                                         alt="Status"
